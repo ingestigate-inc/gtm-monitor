@@ -15,6 +15,14 @@
       "context": "Litigation support professionals — the people who actually manage document review, eDiscovery platforms, and case databases. Direct buyers or influencers for RaaS."
     },
     {
+      "name": "lawyers",
+      "vertical": "law_firms",
+      "pull_count": 25,
+      "frequency": "daily",
+      "requires_auth": true,
+      "context": "General attorney discussion. Private subreddit — requires Reddit API auth. Watch for document management pain, case file overwhelm, tech stack discussions."
+    },
+    {
       "name": "lawfirm",
       "vertical": "law_firms",
       "pull_count": 25,
@@ -26,7 +34,15 @@
       "vertical": "le",
       "pull_count": 25,
       "frequency": "daily",
-      "context": "Evidence processing, digital forensics tool discussions. On-premise deployment is the key selling point for LE."
+      "requires_auth": true,
+      "context": "Evidence processing, digital forensics tool discussions. Private subreddit — requires Reddit API auth. On-premise deployment is the key selling point for LE."
+    },
+    {
+      "name": "AskLE",
+      "vertical": "le",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Public Q&A with law enforcement. Evidence processing discussions, tool recommendations, workflow pain. Accessible alternative while r/LawEnforcement requires auth."
     },
     {
       "name": "digitalforensics",

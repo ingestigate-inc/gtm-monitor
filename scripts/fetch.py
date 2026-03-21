@@ -169,10 +169,10 @@ def fetch_reddit_subreddit(subreddit_config, settings, conn, verbose=False):
 
 def fetch_brave_topic(topic_config, settings, conn, verbose=False):
     """Search Brave Web Search API for a topic."""
-    api_key = os.environ.get("BRAVE_SEARCH_API_KEY")
+    api_key = os.environ.get("BRAVE_API_KEY")
     if not api_key:
         if verbose:
-            print("  SKIP Brave: BRAVE_SEARCH_API_KEY not set")
+            print("  SKIP Brave: BRAVE_API_KEY not set")
         return 0
 
     query = topic_config["query"]
@@ -266,6 +266,10 @@ def main():
         if args.verbose:
             print(f"Fetching {len(subreddits)} subreddits...")
         for sub in subreddits:
+            if sub.get("requires_auth") and not os.environ.get("REDDIT_CLIENT_ID"):
+                if args.verbose:
+                    print(f"  SKIP r/{sub['name']}: requires auth (REDDIT_CLIENT_ID not set)")
+                continue
             try:
                 n = fetch_reddit_subreddit(sub, settings, conn, verbose=args.verbose)
                 total_new += n
