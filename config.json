@@ -1,0 +1,152 @@
+{
+  "reddit_subreddits": [
+    {
+      "name": "ediscovery",
+      "vertical": "law_firms",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Primary hunting ground. Attorneys and lit support professionals discussing costs, tools, workflow pain. Anyone asking about alternatives or complaining about Relativity/DISCO/Nuix pricing is a potential RaaS lead."
+    },
+    {
+      "name": "LitigationSupport",
+      "vertical": "law_firms",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Litigation support professionals — the people who actually manage document review, eDiscovery platforms, and case databases. Direct buyers or influencers for RaaS."
+    },
+    {
+      "name": "lawfirm",
+      "vertical": "law_firms",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Small/mid firm operations. These firms are the RaaS sweet spot — too small for enterprise eDiscovery platforms, big enough to have document-heavy cases."
+    },
+    {
+      "name": "LawEnforcement",
+      "vertical": "le",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Evidence processing, digital forensics tool discussions. On-premise deployment is the key selling point for LE."
+    },
+    {
+      "name": "digitalforensics",
+      "vertical": "le",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Tool recommendations, workflow challenges. Cellebrite/Magnet users who also deal with document evidence. Adjacent to our core but strong overlap."
+    },
+    {
+      "name": "cybersecurity",
+      "vertical": "le",
+      "pull_count": 15,
+      "frequency": "weekly",
+      "context": "Investigation tools, incident response document management. Cross-vertical. Lower signal-to-noise ratio — scan less frequently."
+    },
+    {
+      "name": "InsuranceProfessional",
+      "vertical": "insurance_siu",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "Claims investigation, fraud detection, SIU workflows. Document-heavy fraud cases are RaaS targets."
+    },
+    {
+      "name": "cryptocurrency",
+      "vertical": "crypto",
+      "pull_count": 15,
+      "frequency": "weekly",
+      "context": "Compliance discussions, investigation tools. High noise — filter aggressively for compliance/investigation content, ignore price/trading talk."
+    },
+    {
+      "name": "compliance",
+      "vertical": "crypto",
+      "pull_count": 25,
+      "frequency": "daily",
+      "context": "AML, regulatory document management. Cross-vertical but strong signal for crypto compliance and corporate investigation teams."
+    },
+    {
+      "name": "whitecollar",
+      "vertical": "law_firms",
+      "pull_count": 25,
+      "frequency": "weekly",
+      "context": "Investigation workflow, document review. White-collar defense attorneys are primary RaaS targets."
+    },
+    {
+      "name": "CFE",
+      "vertical": "fraud_examiner",
+      "pull_count": 25,
+      "frequency": "weekly",
+      "context": "Certified fraud examiners. Independent practitioners handling document-heavy fraud cases. Similar profile to small law firms for RaaS."
+    }
+  ],
+  "brave_web_topics": [
+    {
+      "id": "ediscovery-pain",
+      "name": "eDiscovery Pain Points",
+      "vertical": "law_firms",
+      "query": "ediscovery document review cost expensive alternative small firm",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "Industry news, blog posts, articles about eDiscovery costs and alternatives."
+    },
+    {
+      "id": "le-evidence-tools",
+      "name": "LE Evidence & Digital Forensics Tools",
+      "vertical": "le",
+      "query": "law enforcement evidence management digital forensics tool software",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "News about LE evidence processing tools, backlogs, procurement."
+    },
+    {
+      "id": "insurance-siu-fraud",
+      "name": "Insurance SIU & Fraud Investigation",
+      "vertical": "insurance_siu",
+      "query": "insurance fraud investigation SIU document review claims investigation tools",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "SIU team tooling, fraud ring investigations, document-heavy claims."
+    },
+    {
+      "id": "crypto-compliance",
+      "name": "Crypto Compliance Document Pain",
+      "vertical": "crypto",
+      "query": "cryptocurrency compliance investigation documents SAR filing off-chain evidence",
+      "freshness": "pm",
+      "frequency": "weekly",
+      "context": "Compliance teams struggling with document volumes alongside blockchain tracing."
+    },
+    {
+      "id": "corporate-investigations",
+      "name": "Corporate Internal Investigations",
+      "vertical": "corporate",
+      "query": "corporate internal investigation document review HR investigation whistleblower compliance",
+      "freshness": "pm",
+      "frequency": "weekly",
+      "context": "Corporate investigation teams dealing with cross-departmental document review."
+    },
+    {
+      "id": "competitor-dissatisfaction",
+      "name": "Competitor Dissatisfaction",
+      "vertical": "cross_vertical",
+      "query": "Relativity expensive OR Nuix frustrating OR DISCO alternative OR Palantir alternative investigation",
+      "freshness": "pm",
+      "frequency": "weekly",
+      "context": "People frustrated with expensive or difficult enterprise platforms. Strong Ingestigate prospects."
+    },
+    {
+      "id": "relativity-ipo",
+      "name": "Relativity IPO & Industry Shifts",
+      "vertical": "law_firms",
+      "query": "Relativity IPO ediscovery market consolidation",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "Relativity just filed for IPO. Industry chatter about what this means for pricing, competition, alternatives."
+    }
+  ],
+  "settings": {
+    "deduplication_window_hours": 168,
+    "max_raw_findings_age_days": 30,
+    "reddit_user_agent": "script:ingestigate-gtm-monitor:v1.0.0 (research)",
+    "reddit_request_delay_ms": 1500
+  }
+}
