@@ -2,5 +2,5 @@
 .venv/
 __pycache__/
 *.pyc
-MONITOR_PROMPT.mdMONITOR_PROMPT.md
-REVIEW_SESSION_PROMPT.md
+*.md
+!README.md
