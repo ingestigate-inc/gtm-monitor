@@ -8,13 +8,6 @@
       "context": "Primary hunting ground. Attorneys and lit support professionals discussing costs, tools, workflow pain. Anyone asking about alternatives or complaining about Relativity/DISCO/Nuix pricing is a potential RaaS lead."
     },
     {
-      "name": "LitigationSupport",
-      "vertical": "law_firms",
-      "pull_count": 25,
-      "frequency": "daily",
-      "context": "Litigation support professionals — the people who actually manage document review, eDiscovery platforms, and case databases. Direct buyers or influencers for RaaS."
-    },
-    {
       "name": "lawyers",
       "vertical": "law_firms",
       "pull_count": 25,
@@ -96,13 +89,76 @@
   ],
   "brave_web_topics": [
     {
-      "id": "ediscovery-pain",
-      "name": "eDiscovery Pain Points",
+      "id": "reddit-ediscovery-pain",
+      "name": "Reddit eDiscovery Pain Signals",
       "vertical": "law_firms",
-      "query": "ediscovery document review cost expensive alternative small firm",
+      "query": "site:reddit.com \"document review\" frustrated OR expensive OR slow OR alternative OR \"looking for\" 2026",
       "freshness": "pw",
       "frequency": "daily",
-      "context": "Industry news, blog posts, articles about eDiscovery costs and alternatives."
+      "context": "Reddit pain signals about document review that our subreddit fetch might miss — different subs, cross-posts, older posts with new comments."
+    },
+    {
+      "id": "reddit-tool-shopping",
+      "name": "Reddit People Shopping for Tools",
+      "vertical": "law_firms",
+      "query": "site:reddit.com \"need a tool\" OR \"looking for software\" OR \"any recommendations\" investigation OR litigation OR documents OR ediscovery",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "People actively asking for tool recommendations. Highest-value signal — these are buyers."
+    },
+    {
+      "id": "ediscovery-switching",
+      "name": "eDiscovery Switching Signals",
+      "vertical": "law_firms",
+      "query": "ediscovery \"too expensive\" OR \"can't afford\" OR \"looking for alternative\" OR \"switching from\" OR \"replacing\"",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "People expressing intent to switch tools. Direct competitor displacement opportunities."
+    },
+    {
+      "id": "small-firm-document-pain",
+      "name": "Small Firm Document Overwhelm",
+      "vertical": "law_firms",
+      "query": "\"document review\" \"small firm\" OR \"solo\" OR \"boutique\" overwhelmed OR drowning OR backlog OR \"too many documents\"",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "Small/mid firms drowning in documents — ideal RaaS prospects who can't afford enterprise eDiscovery."
+    },
+    {
+      "id": "relativity-frustration",
+      "name": "Relativity Frustration & Switching",
+      "vertical": "law_firms",
+      "query": "Relativity ediscovery \"switching\" OR \"leaving\" OR \"frustrated\" OR \"pricing increase\" OR \"too expensive\" OR \"forced to migrate\"",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "Relativity users unhappy with pricing, RelOne forced migration, or feature removal. Post-IPO this will likely increase."
+    },
+    {
+      "id": "relativity-community-pain",
+      "name": "Relativity Community Forum Pain",
+      "vertical": "law_firms",
+      "query": "site:community.relativity.com frustrated OR slow OR expensive OR problem OR issue OR alternative",
+      "freshness": "pm",
+      "frequency": "weekly",
+      "context": "Relativity's own community forum — users posting about problems, frustrations, or looking for workarounds."
+    },
+    {
+      "id": "nuix-community-pain",
+      "name": "Nuix Community Forum Pain",
+      "vertical": "law_firms",
+      "query": "site:community.nuix.com frustrated OR slow OR expensive OR problem OR issue OR alternative",
+      "freshness": "pm",
+      "frequency": "weekly",
+      "context": "Nuix's community forum — users posting about problems or frustrations."
+    },
+    {
+      "id": "competitor-dissatisfaction",
+      "name": "Competitor Dissatisfaction (Broad)",
+      "vertical": "cross_vertical",
+      "query": "\"Relativity alternative\" OR \"Nuix alternative\" OR \"DISCO alternative\" OR \"Palantir alternative\" investigation OR ediscovery",
+      "freshness": "pm",
+      "frequency": "weekly",
+      "context": "People explicitly searching for alternatives to incumbent platforms."
     },
     {
       "id": "le-evidence-tools",
@@ -139,24 +195,6 @@
       "freshness": "pm",
       "frequency": "weekly",
       "context": "Corporate investigation teams dealing with cross-departmental document review."
-    },
-    {
-      "id": "competitor-dissatisfaction",
-      "name": "Competitor Dissatisfaction",
-      "vertical": "cross_vertical",
-      "query": "Relativity expensive OR Nuix frustrating OR DISCO alternative OR Palantir alternative investigation",
-      "freshness": "pm",
-      "frequency": "weekly",
-      "context": "People frustrated with expensive or difficult enterprise platforms. Strong Ingestigate prospects."
-    },
-    {
-      "id": "relativity-ipo",
-      "name": "Relativity IPO & Industry Shifts",
-      "vertical": "law_firms",
-      "query": "Relativity IPO ediscovery market consolidation",
-      "freshness": "pw",
-      "frequency": "daily",
-      "context": "Relativity just filed for IPO. Industry chatter about what this means for pricing, competition, alternatives."
     }
   ],
   "settings": {
