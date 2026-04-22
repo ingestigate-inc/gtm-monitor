@@ -179,6 +179,15 @@
       "context": "SIU team tooling, fraud ring investigations, document-heavy claims."
     },
     {
+      "id": "insurance-tpa-fraud",
+      "name": "Insurance TPA Fraud & Claims Investigation",
+      "vertical": "insurance_siu",
+      "query": "\"third party administrator\" OR TPA claims fraud investigation SIU \"document review\" OR \"medical records\" OR \"provider ring\"",
+      "freshness": "pw",
+      "frequency": "daily",
+      "context": "TPA anti-fraud and SIU teams. Same pain as carrier SIU — document-heavy claims investigations — but TPAs process across multiple carrier clients so volume is often higher. Major targets: Sedgwick, Gallagher Bassett, Crawford/Broadspire, ESIS, Corvel."
+    },
+    {
       "id": "crypto-compliance",
       "name": "Crypto Compliance Document Pain",
       "vertical": "crypto",
